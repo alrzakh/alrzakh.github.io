@@ -325,9 +325,9 @@
                 <p class="subtitle">Computer Engineer Student</p>
                 <div class="bio">
                     <p>
-                        Welcome to my personal website. I'm a computer engineer and privacy researcher passionate about developing privacy-preserving technologies for data collection, analysis, and learning. My work primarily focuses on **differential privacy (DP)** and **local differential privacy (LDP)**. designing mechanisms that enable useful data analytics while rigorously protecting individual privacy.
+                        Welcome to my personal website. I'm a computer engineer and privacy researcher passionate about developing privacy-preserving technologies for data collection, analysis, and learning. My work primarily focuses on <strong>differential privacy (DP)</strong> and <strong>local differential privacy (LDP)</strong>. designing mechanisms that enable useful data analytics while rigorously protecting individual privacy.
 
-                        Currently, I'm preparing to pursue a **Ph.D.** in computer science, aiming to deepen my research in privacy-preserving data analysis and contribute to academic research in this field.
+                        Currently, I'm preparing to pursue a <strong>Ph.D.</strong> in computer science, aiming to deepen my research in privacy-preserving data analysis and contribute to academic research in this field.
                     </p>
                     <p style="margin-top: 1rem;">
                         I am particularly interested in <strong>Local Differential Privacy (LDP)</strong> and have contributed to multiple research projects in this area, focusing on developing novel LDP mechanisms, designing benchmarking frameworks, and building open-source tools for privacy-preserving data analysis.
