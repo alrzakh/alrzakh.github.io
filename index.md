@@ -1,19 +1,16 @@
-# Personal Website
+---
+layout: home
+title: Home
+---
 
-Welcome to my personal website! Here, you can find information about me, my projects, and my blog. 
+<div style="display: flex; align-items: center; gap: 2rem; margin: 2rem 0; flex-wrap: wrap;">
+  <img src="/assets/images/profile.jpg" alt="Your Name" style="border-radius: 50%; width: 150px; height: 150px; object-fit: cover; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+  <div style="flex: 1; min-width: 250px;">
+    <h1>Welcome!</h1>
+    <p>I'm [Your Name], a [your role] interested in [your field]. This is my personal space where I share my research, projects, and thoughts.</p>
+  </div>
+</div>
 
-## About Me
+## Latest Updates
 
-I am a passionate developer with a love for creating web applications and exploring new technologies. My journey in tech has been exciting, and I am always eager to learn more.
-
-## Projects
-
-Check out my [projects](pages/projects.md) to see what I've been working on lately.
-
-## Blog
-
-Visit my [blog](pages/blog.md) for articles and insights on various topics related to technology and development.
-
-## Contact
-
-Feel free to reach out to me through my [contact page](pages/contact.md). I would love to hear from you!
+Check out my recent [papers](/papers/), [projects](/projects/), and [blog posts](/blog/).
