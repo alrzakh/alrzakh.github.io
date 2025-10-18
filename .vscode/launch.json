@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Jekyll",
+      "type": "ruby",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "program": "jekyll",
+      "args": [
+        "serve",
+        "--watch"
+      ],
+      "env": {
+        "JEKYLL_ENV": "development"
+      },
+      "stopOnEntry": false
+    }
+  ]
+}

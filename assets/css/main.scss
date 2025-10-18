@@ -1,0 +1,36 @@
+// This file contains the main stylesheet for the website, which imports other Sass files and contains custom styles.
+
+@import '../_sass/variables';
+@import '../_sass/mixins';
+@import '../_sass/base';
+
+// Custom styles
+body {
+    font-family: $font-stack;
+    line-height: 1.6;
+    color: $text-color;
+    background-color: $background-color;
+}
+
+header {
+    background: $header-background;
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background: $footer-background;
+    padding: 10px;
+    text-align: center;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// Add more custom styles as needed.

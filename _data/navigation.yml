@@ -1,0 +1,18 @@
+home:
+  title: Home
+  url: /
+about:
+  title: About
+  url: /about
+projects:
+  title: Projects
+  url: /projects
+blog:
+  title: Blog
+  url: /blog
+contact:
+  title: Contact
+  url: /contact
+uses:
+  title: Uses
+  url: /uses

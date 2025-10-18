@@ -1,0 +1,16 @@
+# This file defines attributes for path-based settings in the repository.
+*.html text
+*.md text
+*.scss text
+*.js text
+*.yml text
+*.json text
+*.txt text
+*.css text
+*.rb text
+*.lock text
+*.gitignore text
+*.gitattributes text
+*.editorconfig text
+*.CNAME text
+*.LICENSE text
