@@ -1,27 +1,9 @@
-<!-- ---
-layout: home
-title: Home
----
-
-## Welcome to My Personal Website
-
-Hi, I'm [Your Name], a [Your Profession/Title]. This is my space to share my thoughts, projects, and more.
-
-[Learn More About Me](/about/)
-
-## Featured Projects
-
-{% for project in site.data.projects %}
-
-- **{{ project.name }}** - {{ project.description }}
-  [View Project]({{ project.url }})
-  {% endfor %} -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Website</title>
+    <title>Alireza Khodaie - Personal Website</title>
     <style>
         * {
             margin: 0;
@@ -191,6 +173,15 @@ Hi, I'm [Your Name], a [Your Profession/Title]. This is my space to share my tho
             line-height: 1.7;
         }
 
+        .cv-item ul {
+            margin-left: 1.5rem;
+            color: #555;
+        }
+
+        .cv-item ul li {
+            margin-bottom: 0.3rem;
+        }
+
         /* Publications Page */
         .publication {
             margin-bottom: 2.5rem;
@@ -229,6 +220,23 @@ Hi, I'm [Your Name], a [Your Profession/Title]. This is my space to share my tho
             color: #555;
             line-height: 1.6;
             margin-top: 0.5rem;
+        }
+
+        .publication .links {
+            margin-top: 1rem;
+        }
+
+        .publication .links a {
+            color: #8b7355;
+            text-decoration: none;
+            margin-right: 1rem;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .publication .links a:hover {
+            color: #6b5335;
+            text-decoration: underline;
         }
 
         /* Contact Page */
@@ -289,6 +297,11 @@ Hi, I'm [Your Name], a [Your Profession/Title]. This is my space to share my tho
             .container {
                 padding: 2rem 1rem;
             }
+
+            .profile-image {
+                width: 150px;
+                height: 150px;
+            }
         }
     </style>
 
@@ -307,19 +320,19 @@ Hi, I'm [Your Name], a [Your Profession/Title]. This is my space to share my tho
         <!-- Home Page -->
         <div id="home" class="page active">
             <div class="profile-section">
-                <img src="https://via.placeholder.com/200" alt="Your Name" class="profile-image">
+                <img src="assets/images/profile.jpg" alt="Alireza Khodaie" class="profile-image" onerror="this.src='https://via.placeholder.com/200'">
                 <h1>Your Name</h1>
                 <p class="subtitle">Your Title or Profession</p>
                 <div class="bio">
                     <p>
-                        Welcome to my personal website. I am a [your profession/role] with a passion for [your interests].
-                        With [X] years of experience in [your field], I specialize in [your specialization].
-                        My work focuses on [brief description of your work/research].
+                        Welcome to my personal website. I'm a computer engineer and privacy researcher passionate about developing privacy-preserving technologies for data collection, analysis, and learning. My work primarily focuses on **differential privacy (DP)** and **local differential privacy (LDP)** — designing mechanisms that enable useful data analytics while rigorously protecting individual privacy.
+
+                        Currently, I'm preparing to pursue a **Ph.D.** in computer science, aiming to deepen my research in privacy-preserving data analysis and contribute to academic research in this field.
                     </p>
                     <p style="margin-top: 1rem;">
-                        I am particularly interested in [specific interests] and have contributed to [your contributions].
+                        I am particularly interested in [specific research topics] and have contributed to [your contributions].
                         Through this website, I share my professional journey, publications, and ongoing projects.
-                        Feel free to explore and get in touch if you'd like to connect.
+                        Feel free to explore and get in touch if you'd like to connect or collaborate.
                     </p>
                 </div>
             </div>
@@ -333,69 +346,120 @@ Hi, I'm [Your Name], a [Your Profession/Title]. This is my space to share my tho
                     <h3>Ph.D. in [Your Field]</h3>
                     <div class="date">University Name, 2015-2020</div>
                     <p>Dissertation: [Your dissertation title]</p>
+                    <p>Advisor: [Professor Name]</p>
                 </div>
                 <div class="cv-item">
                     <h3>M.Sc. in [Your Field]</h3>
                     <div class="date">University Name, 2013-2015</div>
                     <p>Thesis: [Your thesis title]</p>
                 </div>
+                <div class="cv-item">
+                    <h3>B.Sc. in [Your Field]</h3>
+                    <div class="date">University Name, 2009-2013</div>
+                </div>
             </div>
 
             <div class="cv-section">
                 <h2>Professional Experience</h2>
                 <div class="cv-item">
-                    <h3>Current Position</h3>
+                    <h3>Current Position Title</h3>
                     <div class="date">Institution Name, 2020-Present</div>
-                    <p>Description of your current role and responsibilities.</p>
+                    <p>Description of your current role and key responsibilities. Mention major achievements and projects you're working on.</p>
                 </div>
                 <div class="cv-item">
-                    <h3>Previous Position</h3>
+                    <h3>Previous Position Title</h3>
                     <div class="date">Institution Name, 2018-2020</div>
-                    <p>Description of your previous role and achievements.</p>
+                    <p>Description of your previous role and notable achievements during this period.</p>
+                </div>
+            </div>
+
+            <div class="cv-section">
+                <h2>Research Interests</h2>
+                <div class="cv-item">
+                    <ul>
+                        <li>Research interest area 1</li>
+                        <li>Research interest area 2</li>
+                        <li>Research interest area 3</li>
+                        <li>Research interest area 4</li>
+                    </ul>
                 </div>
             </div>
 
             <div class="cv-section">
                 <h2>Skills</h2>
                 <div class="cv-item">
-                    <p><strong>Technical:</strong> List your technical skills here</p>
-                    <p><strong>Languages:</strong> List languages you speak</p>
-                    <p><strong>Other:</strong> Any other relevant skills</p>
+                    <p><strong>Technical Skills:</strong> List your technical skills, programming languages, tools, frameworks, etc.</p>
+                    <p><strong>Languages:</strong> List languages you speak (e.g., English - Native, Arabic - Fluent, etc.)</p>
+                    <p><strong>Other Skills:</strong> Any other relevant skills or competencies</p>
+                </div>
+            </div>
+
+            <div class="cv-section">
+                <h2>Awards & Honors</h2>
+                <div class="cv-item">
+                    <h3>Award Name</h3>
+                    <div class="date">Institution, Year</div>
+                    <p>Brief description of the award.</p>
                 </div>
             </div>
         </div>
 
         <!-- Publications Page -->
         <div id="publications" class="page">
-            <h2 style="font-size: 2rem; color: #8b7355; margin-bottom: 2rem; font-weight: 400;">Publications</h2>
+            <h2 style="font-size: 2rem; color: #8b7355; margin-bottom: 2rem; font-weight: 400;">Publications & Papers</h2>
 
             <div class="publication">
                 <h3>Title of Your First Publication</h3>
                 <div class="authors">Author 1, Author 2, <strong>Your Name</strong>, Author 3</div>
-                <div class="venue">Conference/Journal Name, 2024</div>
+                <div class="venue">Conference/Journal Name, 2025</div>
                 <div class="abstract">
-                    Brief abstract or description of your publication. This should summarize the main contributions
-                    and findings of your work.
+                    Brief abstract or description of your publication. This should summarize the main contributions,
+                    methodology, and findings of your research work. Keep it concise but informative.
+                </div>
+                <div class="links">
+                    <a href="#" target="_blank">📄 PDF</a>
+                    <a href="#" target="_blank">🔗 DOI</a>
+                    <a href="#" target="_blank">💻 Code</a>
                 </div>
             </div>
 
             <div class="publication">
                 <h3>Title of Your Second Publication</h3>
                 <div class="authors"><strong>Your Name</strong>, Author 2, Author 3</div>
-                <div class="venue">Conference/Journal Name, 2023</div>
+                <div class="venue">Conference/Journal Name, 2024</div>
                 <div class="abstract">
-                    Brief abstract or description of your publication. This should summarize the main contributions
-                    and findings of your work.
+                    Brief abstract or description of your publication. Highlight the key contributions and impact
+                    of this research work.
+                </div>
+                <div class="links">
+                    <a href="#" target="_blank">📄 PDF</a>
+                    <a href="#" target="_blank">🔗 DOI</a>
+                    <a href="#" target="_blank">📊 arXiv</a>
                 </div>
             </div>
 
             <div class="publication">
                 <h3>Title of Your Third Publication</h3>
                 <div class="authors">Author 1, <strong>Your Name</strong></div>
-                <div class="venue">Conference/Journal Name, 2022</div>
+                <div class="venue">Conference/Journal Name, 2023</div>
                 <div class="abstract">
-                    Brief abstract or description of your publication. This should summarize the main contributions
-                    and findings of your work.
+                    Brief abstract or description of your publication. Explain the problem addressed and the
+                    solution proposed in your research.
+                </div>
+                <div class="links">
+                    <a href="#" target="_blank">📄 PDF</a>
+                    <a href="#" target="_blank">🔗 DOI</a>
+                </div>
+            </div>
+
+            <h3 style="font-size: 1.5rem; color: #8b7355; margin-top: 3rem; margin-bottom: 1.5rem; font-weight: 400;">Working Papers</h3>
+
+            <div class="publication">
+                <h3>Title of Work in Progress</h3>
+                <div class="authors"><strong>Your Name</strong>, Co-authors</div>
+                <div class="venue">Status: Under Review / In Preparation</div>
+                <div class="abstract">
+                    Brief description of your current research project. Mention the objectives and expected contributions.
                 </div>
             </div>
         </div>
@@ -409,6 +473,10 @@ Hi, I'm [Your Name], a [Your Profession/Title]. This is my space to share my tho
                     <a href="mailto:your.email@example.com">your.email@example.com</a>
                 </div>
                 <div class="contact-item">
+                    <strong>Academic Email</strong>
+                    <a href="mailto:your.academic@university.edu">your.academic@university.edu</a>
+                </div>
+                <div class="contact-item">
                     <strong>LinkedIn</strong>
                     <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a>
                 </div>
@@ -417,10 +485,19 @@ Hi, I'm [Your Name], a [Your Profession/Title]. This is my space to share my tho
                     <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
                 </div>
                 <div class="contact-item">
-                    <strong>Office</strong>
-                    Your office address<br>
+                    <strong>Google Scholar</strong>
+                    <a href="https://scholar.google.com/citations?user=yourID" target="_blank">Google Scholar Profile</a>
+                </div>
+                <div class="contact-item">
+                    <strong>ORCID</strong>
+                    <a href="https://orcid.org/0000-0000-0000-0000" target="_blank">0000-0000-0000-0000</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Office Address</strong>
+                    Department Name<br>
+                    University/Institution Name<br>
                     Building Name, Room Number<br>
-                    City, Country
+                    City, Postal Code, Country
                 </div>
             </div>
         </div>
@@ -448,9 +525,23 @@ Hi, I'm [Your Name], a [Your Profession/Title]. This is my space to share my tho
                 const pageId = link.getAttribute('data-page');
                 document.getElementById(pageId).classList.add('active');
 
+                // Update URL hash
+                window.location.hash = pageId;
+
                 // Scroll to top smoothly
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             });
+        });
+
+        // Handle page load with hash
+        window.addEventListener('load', () => {
+            const hash = window.location.hash.substring(1);
+            if (hash) {
+                const targetLink = document.querySelector('[data-page="' + hash + '"]');
+                if (targetLink) {
+                    targetLink.click();
+                }
+            }
         });
     </script>
 

@@ -1,7 +1,0 @@
-- name: Sample Project
-  description: This is a sample project description
-  url: https://github.com
-  
-- name: Another Project
-  description: Another sample project
-  url: https://github.com
