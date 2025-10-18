@@ -321,11 +321,11 @@
         <div id="home" class="page active">
             <div class="profile-section">
                 <img src="assets/images/profile.jpg" alt="Alireza Khodaie" class="profile-image" onerror="this.src='https://via.placeholder.com/200'">
-                <h1>Your Name</h1>
-                <p class="subtitle">Your Title or Profession</p>
+                <h1>Alireza Khodaie</h1>
+                <p class="subtitle">Computer Engineer Student</p>
                 <div class="bio">
                     <p>
-                        Welcome to my personal website. I'm a computer engineer and privacy researcher passionate about developing privacy-preserving technologies for data collection, analysis, and learning. My work primarily focuses on **differential privacy (DP)** and **local differential privacy (LDP)** — designing mechanisms that enable useful data analytics while rigorously protecting individual privacy.
+                        Welcome to my personal website. I'm a computer engineer and privacy researcher passionate about developing privacy-preserving technologies for data collection, analysis, and learning. My work primarily focuses on **differential privacy (DP)** and **local differential privacy (LDP)**. designing mechanisms that enable useful data analytics while rigorously protecting individual privacy.
 
                         Currently, I'm preparing to pursue a **Ph.D.** in computer science, aiming to deepen my research in privacy-preserving data analysis and contribute to academic research in this field.
                     </p>
