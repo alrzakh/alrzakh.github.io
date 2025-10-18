@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /404.html
+Disallow: /_drafts/
+Disallow: /_posts/
+Disallow: /pages/contact.md
+Disallow: /pages/about.md
+Disallow: /pages/projects.md
+Disallow: /pages/blog.md
+Disallow: /pages/uses.md
+Allow: /

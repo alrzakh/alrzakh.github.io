@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://alrzakh.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://alrzakh.github.io/" rel="alternate" type="text/html" /><updated>2025-10-18T09:50:26+00:00</updated><id>https://alrzakh.github.io/feed.xml</id><title type="html">My Personal Website</title><subtitle>Welcome to my personal website where I share my projects, blog posts, and more about myself.</subtitle><author><name>Your Name</name></author><entry><title type="html">Building With Github Pages</title><link href="https://alrzakh.github.io/2025/02/01/building-with-github-pages.html" rel="alternate" type="text/html" title="Building With Github Pages" /><published>2025-02-01T00:00:00+00:00</published><updated>2025-02-01T00:00:00+00:00</updated><id>https://alrzakh.github.io/2025/02/01/building-with-github-pages</id><content type="html" xml:base="https://alrzakh.github.io/2025/02/01/building-with-github-pages.html"><![CDATA[<h3 id="getting-started">Getting Started</h3>
+
+<p>To begin, you need to create a GitHub account if you don’t already have one. Once you have an account, you can create a new repository for your website. Make sure to name it in the format <code class="language-plaintext highlighter-rouge">username.github.io</code>, where <code class="language-plaintext highlighter-rouge">username</code> is your GitHub username. This naming convention is crucial as it allows GitHub to recognize it as a Pages site.</p>
+
+<h3 id="setting-up-your-site">Setting Up Your Site</h3>
+
+<ol>
+  <li>
+    <p><strong>Choose a Framework</strong>: While GitHub Pages supports static HTML, using a static site generator like Jekyll can simplify the process. Jekyll allows you to write your content in Markdown, which is then converted to HTML.</p>
+  </li>
+  <li>
+    <p><strong>Create Your Files</strong>: After setting up Jekyll, you’ll have a basic structure with folders for layouts, includes, and posts. Customize these files to fit your style and needs.</p>
+  </li>
+  <li>
+    <p><strong>Configuration</strong>: Edit the <code class="language-plaintext highlighter-rouge">_config.yml</code> file to set your site title, description, and other metadata. This file is essential for configuring your Jekyll site.</p>
+  </li>
+</ol>
+
+<h3 id="customizing-your-website">Customizing Your Website</h3>
+
+<ul>
+  <li>
+    <p><strong>Layouts and Includes</strong>: Modify the layout files in the <code class="language-plaintext highlighter-rouge">_layouts</code> directory to change the overall look of your site. Use the <code class="language-plaintext highlighter-rouge">_includes</code> directory for reusable components like headers and footers.</p>
+  </li>
+  <li>
+    <p><strong>Styling</strong>: Use Sass to style your website. The <code class="language-plaintext highlighter-rouge">_sass</code> folder allows you to create variables and mixins for consistent styling across your site.</p>
+  </li>
+  <li>
+    <p><strong>JavaScript Functionality</strong>: Add interactivity with JavaScript. You can include scripts in the <code class="language-plaintext highlighter-rouge">assets/js</code> directory to enhance user experience.</p>
+  </li>
+</ul>
+
+<h3 id="deploying-your-site">Deploying Your Site</h3>
+
+<p>Once you’re satisfied with your website, it’s time to deploy it. Push your changes to the GitHub repository, and your site will be live at <code class="language-plaintext highlighter-rouge">https://username.github.io</code>. You can also set up a custom domain by adding a <code class="language-plaintext highlighter-rouge">CNAME</code> file to your repository.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>Building a personal website with GitHub Pages is a rewarding experience. It not only showcases your skills but also serves as a platform for sharing your thoughts and projects. With the right tools and a bit of creativity, you can create a stunning online presence. Happy coding!</p>]]></content><author><name>Your Name</name></author><summary type="html"><![CDATA[Getting Started]]></summary></entry><entry><title type="html">Welcome To My Site</title><link href="https://alrzakh.github.io/2025/01/01/welcome-to-my-site.html" rel="alternate" type="text/html" title="Welcome To My Site" /><published>2025-01-01T00:00:00+00:00</published><updated>2025-01-01T00:00:00+00:00</updated><id>https://alrzakh.github.io/2025/01/01/welcome-to-my-site</id><content type="html" xml:base="https://alrzakh.github.io/2025/01/01/welcome-to-my-site.html"><![CDATA[]]></content><author><name>Your Name</name></author><summary type="html"><![CDATA[]]></summary></entry></feed>
