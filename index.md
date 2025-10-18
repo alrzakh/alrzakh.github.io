@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -351,6 +351,7 @@
                     <h3>M.Sc. in Computer Engineering</h3>
                     <div class="date">Koc University, 2022-2025</div>
                     <p>Thesis: Learning Bayesian Nerworks under Local Differential Privacy</p>
+                    <p>Advisor: Prof. Mehmet Emre Gursoy</p>
                 </div>
                 <div class="cv-item">
                     <h3>B.Sc. in Computer Engineering</h3>
