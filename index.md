@@ -343,19 +343,18 @@
             <div class="cv-section">
                 <h2>Education</h2>
                 <div class="cv-item">
-                    <h3>Ph.D. in [Your Field]</h3>
-                    <div class="date">University Name, 2015-2020</div>
-                    <p>Dissertation: [Your dissertation title]</p>
-                    <p>Advisor: [Professor Name]</p>
+                    <h3>Ph.D. in Computer Engineering</h3>
+                    <div class="date">Koc University, 2025-present</div>
+                    <p>Advisor: Prof. Mehmet Emre Gursoy</p>
                 </div>
                 <div class="cv-item">
-                    <h3>M.Sc. in [Your Field]</h3>
-                    <div class="date">University Name, 2013-2015</div>
-                    <p>Thesis: [Your thesis title]</p>
+                    <h3>M.Sc. in Computer Engineering</h3>
+                    <div class="date">Koc University, 2022-2025</div>
+                    <p>Thesis: Learning Bayesian Nerworks under Local Differential Privacy</p>
                 </div>
                 <div class="cv-item">
-                    <h3>B.Sc. in [Your Field]</h3>
-                    <div class="date">University Name, 2009-2013</div>
+                    <h3>B.Sc. in Computer Engineering</h3>
+                    <div class="date">Tabriz University, 2017-2021</div>
                 </div>
             </div>
 
@@ -504,7 +503,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <p>&copy; 2025 Alireza Khodaie. All rights reserved.</p>
     </footer>
 
     <script>
