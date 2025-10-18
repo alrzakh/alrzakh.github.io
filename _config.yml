@@ -2,9 +2,8 @@ title: My Personal Website
 description: Welcome to my personal website where I share my projects, blog posts, and more about myself.
 baseurl: ""
 url: "https://alrzakh.github.io"
-author: Alireza Khodaie
-email: akhodaie22@ku.edu.tr
-theme: minima
+author: Your Name
+email: your.email@example.com
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
@@ -18,12 +17,5 @@ exclude:
   - .editorconfig
   - .vscode
   - .github
-  - _drafts
-  - _posts
-  - _data
-  - _sass
-  - assets
-  - pages
-  - _includes
-  - _layouts
-  - robots.txt
+  - vendor
+  - node_modules
