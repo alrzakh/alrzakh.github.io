@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: home
 title: Home
 ---
@@ -15,4 +15,444 @@ Hi, I'm [Your Name], a [Your Profession/Title]. This is my space to share my tho
 
 - **{{ project.name }}** - {{ project.description }}
   [View Project]({{ project.url }})
-  {% endfor %}
+  {% endfor %} -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fafafa;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #fff;
+            padding: 1.5rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #555;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        nav a:hover {
+            color: #8b7355;
+        }
+
+        nav a.active {
+            color: #8b7355;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 50%;
+            background-color: #8b7355;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        nav a:hover::after,
+        nav a.active::after {
+            width: 100%;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        /* Page Content */
+        .page {
+            display: none;
+            animation: fadeIn 0.5s ease;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Home Page */
+        .profile-section {
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 2rem;
+            border: 5px solid #fff;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .profile-section h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+        }
+
+        .profile-section .subtitle {
+            font-size: 1.2rem;
+            color: #8b7355;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+
+        .bio {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: justify;
+            line-height: 1.8;
+            color: #555;
+            font-size: 1.05rem;
+        }
+
+        /* CV Page */
+        .cv-section {
+            margin-bottom: 3rem;
+        }
+
+        .cv-section h2 {
+            font-size: 1.8rem;
+            color: #8b7355;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #e0e0e0;
+            font-weight: 400;
+        }
+
+        .cv-item {
+            margin-bottom: 2rem;
+            padding-left: 1rem;
+        }
+
+        .cv-item h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 0.3rem;
+            font-weight: 500;
+        }
+
+        .cv-item .date {
+            color: #888;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+
+        .cv-item p {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        /* Publications Page */
+        .publication {
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .publication:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .publication h3 {
+            font-size: 1.3rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .publication .authors {
+            color: #666;
+            margin-bottom: 0.3rem;
+            font-size: 0.95rem;
+        }
+
+        .publication .venue {
+            color: #8b7355;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+
+        .publication .abstract {
+            color: #555;
+            line-height: 1.6;
+            margin-top: 0.5rem;
+        }
+
+        /* Contact Page */
+        .contact-info {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .contact-info h2 {
+            font-size: 1.8rem;
+            color: #8b7355;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+
+        .contact-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-item strong {
+            color: #333;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        .contact-item a {
+            color: #8b7355;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-item a:hover {
+            color: #6b5335;
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: #888;
+            font-size: 0.9rem;
+            margin-top: 3rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                gap: 1.5rem;
+            }
+
+            .profile-section h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 2rem 1rem;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+            <li><a href="#cv" class="nav-link" data-page="cv">CV</a></li>
+            <li><a href="#publications" class="nav-link" data-page="publications">Publications</a></li>
+            <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <div class="profile-section">
+                <img src="https://via.placeholder.com/200" alt="Your Name" class="profile-image">
+                <h1>Your Name</h1>
+                <p class="subtitle">Your Title or Profession</p>
+                <div class="bio">
+                    <p>
+                        Welcome to my personal website. I am a [your profession/role] with a passion for [your interests].
+                        With [X] years of experience in [your field], I specialize in [your specialization].
+                        My work focuses on [brief description of your work/research].
+                    </p>
+                    <p style="margin-top: 1rem;">
+                        I am particularly interested in [specific interests] and have contributed to [your contributions].
+                        Through this website, I share my professional journey, publications, and ongoing projects.
+                        Feel free to explore and get in touch if you'd like to connect.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- CV Page -->
+        <div id="cv" class="page">
+            <div class="cv-section">
+                <h2>Education</h2>
+                <div class="cv-item">
+                    <h3>Ph.D. in [Your Field]</h3>
+                    <div class="date">University Name, 2015-2020</div>
+                    <p>Dissertation: [Your dissertation title]</p>
+                </div>
+                <div class="cv-item">
+                    <h3>M.Sc. in [Your Field]</h3>
+                    <div class="date">University Name, 2013-2015</div>
+                    <p>Thesis: [Your thesis title]</p>
+                </div>
+            </div>
+
+            <div class="cv-section">
+                <h2>Professional Experience</h2>
+                <div class="cv-item">
+                    <h3>Current Position</h3>
+                    <div class="date">Institution Name, 2020-Present</div>
+                    <p>Description of your current role and responsibilities.</p>
+                </div>
+                <div class="cv-item">
+                    <h3>Previous Position</h3>
+                    <div class="date">Institution Name, 2018-2020</div>
+                    <p>Description of your previous role and achievements.</p>
+                </div>
+            </div>
+
+            <div class="cv-section">
+                <h2>Skills</h2>
+                <div class="cv-item">
+                    <p><strong>Technical:</strong> List your technical skills here</p>
+                    <p><strong>Languages:</strong> List languages you speak</p>
+                    <p><strong>Other:</strong> Any other relevant skills</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Publications Page -->
+        <div id="publications" class="page">
+            <h2 style="font-size: 2rem; color: #8b7355; margin-bottom: 2rem; font-weight: 400;">Publications</h2>
+
+            <div class="publication">
+                <h3>Title of Your First Publication</h3>
+                <div class="authors">Author 1, Author 2, <strong>Your Name</strong>, Author 3</div>
+                <div class="venue">Conference/Journal Name, 2024</div>
+                <div class="abstract">
+                    Brief abstract or description of your publication. This should summarize the main contributions
+                    and findings of your work.
+                </div>
+            </div>
+
+            <div class="publication">
+                <h3>Title of Your Second Publication</h3>
+                <div class="authors"><strong>Your Name</strong>, Author 2, Author 3</div>
+                <div class="venue">Conference/Journal Name, 2023</div>
+                <div class="abstract">
+                    Brief abstract or description of your publication. This should summarize the main contributions
+                    and findings of your work.
+                </div>
+            </div>
+
+            <div class="publication">
+                <h3>Title of Your Third Publication</h3>
+                <div class="authors">Author 1, <strong>Your Name</strong></div>
+                <div class="venue">Conference/Journal Name, 2022</div>
+                <div class="abstract">
+                    Brief abstract or description of your publication. This should summarize the main contributions
+                    and findings of your work.
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Page -->
+        <div id="contact" class="page">
+            <div class="contact-info">
+                <h2>Get In Touch</h2>
+                <div class="contact-item">
+                    <strong>Email</strong>
+                    <a href="mailto:your.email@example.com">your.email@example.com</a>
+                </div>
+                <div class="contact-item">
+                    <strong>LinkedIn</strong>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a>
+                </div>
+                <div class="contact-item">
+                    <strong>GitHub</strong>
+                    <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Office</strong>
+                    Your office address<br>
+                    Building Name, Room Number<br>
+                    City, Country
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Navigation
+        const navLinks = document.querySelectorAll('.nav-link');
+        const pages = document.querySelectorAll('.page');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+
+                // Remove active class from all links and pages
+                navLinks.forEach(l => l.classList.remove('active'));
+                pages.forEach(p => p.classList.remove('active'));
+
+                // Add active class to clicked link and corresponding page
+                link.classList.add('active');
+                const pageId = link.getAttribute('data-page');
+                document.getElementById(pageId).classList.add('active');
+
+                // Scroll to top smoothly
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        });
+    </script>
+
+</body>
+</html>
