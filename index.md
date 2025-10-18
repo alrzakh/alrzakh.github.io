@@ -330,9 +330,9 @@
                         Currently, I'm preparing to pursue a **Ph.D.** in computer science, aiming to deepen my research in privacy-preserving data analysis and contribute to academic research in this field.
                     </p>
                     <p style="margin-top: 1rem;">
-                        I am particularly interested in [specific research topics] and have contributed to [your contributions].
-                        Through this website, I share my professional journey, publications, and ongoing projects.
-                        Feel free to explore and get in touch if you'd like to connect or collaborate.
+                        I am particularly interested in <strong>Local Differential Privacy (LDP)</strong> and have contributed to multiple research projects in this area, focusing on developing novel LDP mechanisms, designing benchmarking frameworks, and building open-source tools for privacy-preserving data analysis.
+                        Through this website, I share my <strong>academic journey</strong>, <strong>publications</strong>, and <strong>ongoing research projects</strong> in data privacy and security.
+                        I welcome opportunities for <strong>collaboration and discussion</strong> on advancing privacy-preserving technologies.
                     </p>
                 </div>
             </div>
