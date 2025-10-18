@@ -1,7 +1,9 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'jekyll', '~> 4.2.0'
-gem 'jekyll-feed', '~> 0.15.0'
-gem 'jekyll-seo-tag', '~> 2.7.0'
-gem 'jekyll-sitemap', '~> 1.4.0'
-gem 'sassc-rails', '~> 2.1.0'
+gem "github-pages", group: :jekyll_plugins
+gem "minima", "~> 2.5"
+
+group :jekyll_plugins do
+  gem "jekyll-feed"
+  gem "jekyll-seo-tag"
+end

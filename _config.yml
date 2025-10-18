@@ -26,5 +26,4 @@ exclude:
   - pages
   - _includes
   - _layouts
-  - CNAME
   - robots.txt
