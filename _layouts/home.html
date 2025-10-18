@@ -1,44 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    {% include head.html %}
-</head>
-<body>
-    {% include header.html %}
-    
-    <main>
-        <section class="hero">
-            <h1>Welcome to My Personal Website</h1>
-            <p>Hi, I'm [Your Name], a [Your Profession/Title]. This is my space to share my thoughts, projects, and more.</p>
-            <a href="{{ site.baseurl }}/pages/about.md" class="btn">Learn More About Me</a>
-        </section>
+---
+layout: default
+---
 
-        <section class="projects">
-            <h2>Featured Projects</h2>
-            <ul>
-                {% for project in site.data.projects %}
-                    <li>
-                        <h3>{{ project.title }}</h3>
-                        <p>{{ project.description }}</p>
-                        <a href="{{ project.link }}" class="btn">View Project</a>
-                    </li>
-                {% endfor %}
-            </ul>
-        </section>
+<div class="home">
+  {{ content }}
 
-        <section class="blog">
-            <h2>Latest Blog Posts</h2>
-            <ul>
-                {% for post in site.posts limit:3 %}
-                    <li>
-                        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-                        <p>{{ post.excerpt }}</p>
-                    </li>
-                {% endfor %}
-            </ul>
-        </section>
-    </main>
-
-    {% include footer.html %}
-</body>
-</html>
+  {% if site.posts.size > 0 %}
+    <h2 class="post-list-heading">Recent Blog Posts</h2>
+    <ul class="post-list">
+      {% for post in site.posts limit:5 %}
+        <li>
+          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          {% if post.excerpt %}
+            {{ post.excerpt }}
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</div>
