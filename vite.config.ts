@@ -12,5 +12,5 @@ export default defineConfig({
 		}),
 		tailwindcss()
 	],
-	base: '/' // No repo name in URL for username.github.io repo
+	base: '/alrzakh.github.io/' // No repo name in URL for username.github.io repo
 })
